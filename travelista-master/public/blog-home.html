@@ -1,654 +1,917 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="colorlib">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Cẩm Nang Du Lịch</title>
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+  <head>
+    <!-- Mobile Specific Meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png" />
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib" />
+    <!-- Meta Description -->
+    <meta name="description" content="" />
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="" />
+    <!-- meta character set -->
+    <meta charset="UTF-8" />
+    <!-- Site Title -->
+    <title>Cẩm Nang Du Lịch</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+      rel="stylesheet"
+    />
+    <!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/jquery-ui.css">				
-			<link rel="stylesheet" href="css/nice-select.css">							
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">				
-			<link rel="stylesheet" href="css/main.css">
-		</head>
-		<body>	
-			<header id="header">
-				<div class="header-top">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-lg-6 col-sm-2 col-2 header-top-left">
-							</div>
-							<div class="col-lg-6 col-sm-10 col-10 header-top-right">
-								<div class="header-social">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<button type="button" id="sign-in-btn" class="sign-in-btn" data-toggle="modal" data-target="#modal-sign-in">Đăng nhập</button>
-									<button type="button" id="sign-up-btn" class="sign-up-btn" data-toggle="modal" data-target="#modal-sign-in">Đăng ký</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container main-menu">
-					<div class="row align-items-center justify-content-between d-flex">
-						<div id="logo">
-							<a href="index.html"><img src="img/Ttravel.png" alt="" title="" /></a>
-						</div>
-						<nav id="nav-menu-container">
-							<ul class="nav-menu">
-								<li><a href="index.html">Trang Chủ</a></li>
-								<li><a href="tours.html">Đặt Tours</a></li>
-								<li><a href="hotels.html">Khách Sạn</a></li>
-								<li><a href="blog-home.html">Cẩm Nang Du Lịch</a></li>
-								<li class="menu-has-children"><a href="">Pages</a>
-									<ul>
-										<li><a href="elements.html">Elements</a></li>
-										<li class="menu-has-children"><a href="">Level 2 </a>
-											<ul>
-												<li><a href="#">Item One</a></li>
-												<li><a href="#">Item Two</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Liên Hệ</a></li>
-		
-		
-		
-							</ul>
-						</nav>
-						<!-- #nav-menu-container -->
-					</div>
-				</div>
-			</header>
-			<div class="modal fade" id="modal-sign-in" tabindex="-1" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered signin-up-form" role="document">
-					<div class="modal-content modal-signin-form">
-		
-						<div class="modal-header">
-							<h4 class="modal-title signin-form-title">Đăng Nhập</h4>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					  </button>
-						</div>
-						<div class="sign-in-content">
-							<form action="#">
-								<div class="mail-input-form">
-									<input type="email" name="email-signin" required placeholder="Email" class="type-sign-in-email">
-									<label for="sign-in-email-lbl" class="sign-in-email-lbl"></label>
-									<div class="know-validate-signin-email"></div>
-								</div>
-								<div class="forgot-pass-ask">
-									<a href="#" target="_blank">Quên mật khẩu?</a>
-								</div>
-		
-								<div class="pass-input-form">
-									<input type="password" name="password-signin" required placeholder="Mật Khẩu" class="type-sign-in-pass">
-									<label for="sign-in-pass-lbl" class="sign-in-pass-lbl"></label>
-									<div class="know-validate-signin-pass"></div>
-								</div>
-		
-								<div class="remember-sign-in">
-									<label class="switch" for="checkbox-remember-sign-in">
-									<input type="checkbox" id="checkbox-remember-sign-in" />
-									<div class="slider round"></div>
-								</label>
-									<span class="hoh">Remember me</span>
-								</div>
-								<div class="container-btn-submit-sign-in">
-									<button type="submit" id="dang-nhap" class="submit-sign-in-btn">Đăng nhập</button>
-								</div>
-							</form>
-							<div class="dont-have-account">
-								<p>Bạn chưa có tài khoản?</p>
-								<button type="button" id="register-from-signin-form" class="create-new-acc">Tạo mới</button>
-							</div>
-		
-						</div>
-		
-		
-					</div>
-					<div class="modal-content modal-signup-form">
-		
-						<div class="modal-header">
-							<h4 class="modal-title signin-form-title">Đăng Ký</h4>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					  </button>
-						</div>
-						<div class="sign-in-content">
-							<div class="signup-benefits">
-								<p><i class="fa fa-check signup-benefits-tick" aria-hidden="true"></i> Đặt nhanh hơn</p>
-								<p><i class="fa fa-check signup-benefits-tick" aria-hidden="true"></i> Nhận thêm nhiều khuyến mãi hấp dẫn</p>
-								<p><i class="fa fa-check signup-benefits-tick" aria-hidden="true"></i> Dễ dàng biết thêm thông tin về chuyến đi của bạn</p>
-							</div>
-							<form action="#">
-								<div class="mail-input-form name-input-signup">
-									<input type="text" name="name-signup" placeholder="Họ Tên" required class="type-sign-in-email">
-									<label for="sign-in-email-lbl" class="sign-in-name-lbl"></label>
-									<div class="know-validate-signin-email"></div>
-								</div>
-								<div class="mail-input-form">
-									<input type="email" name="email-signin" placeholder="Email" required class="type-sign-in-email">
-									<label for="sign-in-email-lbl" class="sign-in-email-lbl"></label>
-									<div class="know-validate-signin-email"></div>
-								</div>
-		
-		
-								<div class="pass-input-form pass-input-signup">
-									<input type="password" name="password-signin" placeholder="Mật Khẩu" class="type-sign-in-pass" required>
-									<label for="sign-in-pass-lbl" class="sign-in-pass-lbl"></label>
-									<div class="know-validate-signin-pass"></div>
-									<div class="notice-pass align-self-center">
-										<p>( Mật khẩu từ 6-30 ký tự, phân biệt chữ hoa thường, không chứa dấu cách)</p>
-									</div>
-								</div>
-		
-		
-								<div class="container-btn-submit-sign-in">
-									<button type="submit" id="dang-ky" class="submit-sign-in-btn">Đăng ký</button>
-								</div>
-							</form>
-							<div class="dont-have-account">
-								<p>Bạn đã có tài khoản?</p>
-								<button type="button" class="create-new-acc" id="login-from-signup-form">Đăng nhập</button>
-							</div>
-						</div>
-		
-		
-					</div>
-				</div>
-		
-			</div>
-		
-			<!-- #header -->
+    <link rel="stylesheet" href="css/linearicons.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-2 col-2 header-top-left"></div>
+            <div class="col-lg-6 col-sm-10 col-10 header-top-right">
+              <div class="header-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <button
+                  type="button"
+                  id="sign-in-btn"
+                  class="sign-in-btn"
+                  data-toggle="modal"
+                  data-target="#modal-sign-in"
+                >
+                  Đăng nhập
+                </button>
+                <button
+                  type="button"
+                  id="sign-up-btn"
+                  class="sign-up-btn"
+                  data-toggle="modal"
+                  data-target="#modal-sign-in"
+                >
+                  Đăng ký
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+          <div id="logo">
+            <a href="index.html"
+              ><img src="img/Ttravel.png" alt="" title=""
+            /></a>
+          </div>
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="tours.html">Đặt Tours</a></li>
+              <li><a href="blog-home.html">Cẩm Nang Du Lịch</a></li>
+              <li class="menu-has-children">
+                <a href="">Đặt Nhanh</a>
+                <ul>
+                  <li><a href="#">Hotel</a></li>
+                  <li class="menu-has-children">
+                    <a href="">Motel</a>
+                    <ul>
+                      <li><a href="#">Motel1</a></li>
+                      <li><a href="#">Motel2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+          </nav>
+          <!-- #nav-menu-container -->
+        </div>
+      </div>
+    </header>
+    <div class="modal fade" id="modal-sign-in" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-dialog-centered signin-up-form"
+        role="document"
+      >
+        <div class="modal-content modal-signin-form">
+          <div class="modal-header">
+            <h4 class="modal-title signin-form-title">Đăng Nhập</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="sign-in-content">
+            <form action="#">
+              <div class="mail-input-form">
+                <input
+                  type="email"
+                  name="email-signin"
+                  required
+                  placeholder="Email"
+                  class="type-sign-in-email"
+                />
+                <label
+                  for="sign-in-email-lbl"
+                  class="sign-in-email-lbl"
+                ></label>
+                <div class="know-validate-signin-email"></div>
+              </div>
+              <div class="forgot-pass-ask">
+                <a href="#" target="_blank">Quên mật khẩu?</a>
+              </div>
 
-			<!-- start banner Area -->
-			<section class="banner-area relative blog-home-banner" id="home">	
-				<div class="overlay overlay-bg"></div>
-				<div class="container">				
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content blog-header-content col-lg-12">
-							<h1 class="text-white">
-								Maldives ngay tại Việt Nam?
-												
-							</h1>	
-							<p class="text-white">
-								Đây là thời điểm thích hợp cho những chuyến đi xa, tránh những ngày nắng đến oi bức. Cùng đến với Kỳ Co - Maldives Việt Nam!
-							</p>
-							<a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
-						</div>	
-					</div>
-				</div>
-			</section>
-			<!-- End banner Area -->				  
+              <div class="pass-input-form">
+                <input
+                  type="password"
+                  name="password-signin"
+                  required
+                  placeholder="Mật Khẩu"
+                  class="type-sign-in-pass"
+                />
+                <label for="sign-in-pass-lbl" class="sign-in-pass-lbl"></label>
+                <div class="know-validate-signin-pass"></div>
+              </div>
 
-			<!-- Start top-category-widget Area -->
-			<section class="top-category-widget-area pt-90 pb-90 ">
-				<div class="container">
-					<div class="row">		
-						<div class="col-lg-4">
-							<div class="single-cat-widget">
-								<div class="content relative">
-									<div class="overlay overlay-bg"></div>
-								    <a href="#" target="_blank">
-								      <div class="thumb">
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget1.jpg" alt="">
-								  	  </div>
-								      <div class="content-details">
-								        <h4 class="content-title mx-auto text-uppercase">Đời sống xã hội</h4>
-								        <span></span>								        
-								        <p>Tận hưởng cuộc sống cùng nhau</p>
-								      </div>
-								    </a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-cat-widget">
-								<div class="content relative">
-									<div class="overlay overlay-bg"></div>
-								    <a href="#" target="_blank">
-								      <div class="thumb">
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/blog/blog-culture.jpg" alt="">
-								  	  </div>
-								      <div class="content-details">
-								        <h4 class="content-title mx-auto text-uppercase">văn hóa</h4>
-								        <span></span>								        
-								        <p>Đắm chìm vào nét đẹp văn hóa</p>
-								      </div>
-								    </a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-cat-widget">
-								<div class="content relative">
-									<div class="overlay overlay-bg"></div>
-								    <a href="#" target="_blank">
-								      <div class="thumb">
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/blog/cat-widget3.jpg" alt="">
-								  	  </div>
-								      <div class="content-details">
-								        <h4 class="content-title mx-auto text-uppercase">ẩm thực</h4>
-								        <span></span>
-								        <p>Yêu phải nói, đói phải ăn</p>
-								      </div>
-								    </a>
-								</div>
-							</div>
-						</div>												
-					</div>
-				</div>	
-			</section>
-			<!-- End top-category-widget Area -->
-			
-			<!-- Start post-content Area -->
-			<section class="post-content-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 posts-list">
-							<div class="single-post row">
-								<div class="col-lg-3  col-md-3 meta-details">
-									<ul class="tags">
-										<li><a href="#">Ẩm thực,</a></li>
-										<li><a href="#">Công nghệ,</a></li>
-										<li><a href="#">Văn hóa,</a></li>
-										<li><a href="#">Lối sống</a></li>
-									</ul>
-									<div class="user-details row">
-										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Nhật Tiến</a> <span class="lnr lnr-user"></span></p>
-										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Feb, 2020</a> <span class="lnr lnr-calendar-full"></span></p>
-										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>						
-									</div>
-								</div>
-								<div class="col-lg-9 col-md-9 ">
-									<div class="feature-img">
-										<img class="img-fluid" src="img/blog/wuhan.jpg" alt="">
-									</div>
-									<a class="posts-title" href="blog-single.html"><h3>Du Lịch Wuhan - Xu Hướng Xuân Hè 2020</h3></a>
-									<p class="excert">
-										Trong khoảng thời gian xuân hè 2020, dân yêu du lịch dường như có xu hướng mới là tham quan TP Wuhan - Trung Quốc. Có một lý tưởng mới cho rằng, người đi Wuhan về nước có nhiều cơ hội trở thành một famous people.<br /> Họ bán hàng online sao? 
-									</p>
-									<a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
-								</div>
-							</div>
-							<div class="single-post row">
-								<div class="col-lg-3  col-md-3 meta-details">
-									<ul class="tags">
-										<li><a href="#">Ẩm thực,</a></li>
-										<li><a href="#">Công nghệ,</a></li>
-										<li><a href="#">Văn hóa,</a></li>
-										<li><a href="#">Lối sống</a></li>
-									</ul>
-									<div class="user-details row">
-										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Nhật Tiến</a> <span class="lnr lnr-user"></span></p>
-										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Feb, 2020</a> <span class="lnr lnr-calendar-full"></span></p>
-										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>						
-									</div>
-								</div>
-								<div class="col-lg-9 col-md-9 ">
-									<div class="feature-img">
-										<img class="img-fluid" src="img/blog/daegu.jpg" alt="">
-									</div>
-									<a class="posts-title" href="blog-single.html"><h3>Du Lịch Daegu - Xu Hướng Xuân Hè 2020</h3></a>
-									<p class="excert">
-										Trong khoảng thời gian xuân hè 2020, dân yêu du lịch dường như có xu hướng mới là tham quan TP Daegu - Hàn Quốc. Có một lý tưởng mới cho rằng, người đi Daegu về nước có nhiều cơ hội trở thành một famous people.<br /> Họ bán hàng online sao? 
-									</p>
-									<a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
-								</div>
-							</div>
-							<div class="single-post row">
-								<div class="col-lg-3  col-md-3 meta-details">
-									<ul class="tags">
-										<li><a href="#">Ẩm thực,</a></li>
-										<li><a href="#">Công nghệ,</a></li>
-										<li><a href="#">Văn hóa,</a></li>
-										<li><a href="#">Lối sống</a></li>
-									</ul>
-									<div class="user-details row">
-										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Nhật Tiến</a> <span class="lnr lnr-user"></span></p>
-										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Feb, 2020</a> <span class="lnr lnr-calendar-full"></span></p>
-										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>						
-									</div>
-								</div>
-								<div class="col-lg-9 col-md-9 ">
-									<div class="feature-img">
-										<img class="img-fluid" src="img/blog/fukushima.jpg" alt="">
-									</div>
-									<a class="posts-title" href="blog-single.html"><h3>Một ngày ở Aizu - Fukushima</h3></a>
-									<p class="excert">
-										Tôi bất ngờ đến lặng người vì cảnh quan nơi này... Hoa anh đào sao có thể đẹp một cách mềm mại đến thế? Hòa lẫn với tiết trời mát mẻ là màu trời xanh ngắt, màu hoa hồng nhạt. Bạn có tưởng tượng ra được không?... 
-									</p>
-									<a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
-								</div>
-							</div>
-							<div class="single-post row">
-								<div class="col-lg-3  col-md-3 meta-details">
-									<ul class="tags">
-										<li><a href="#">Ẩm thực,</a></li>
-										<li><a href="#">Công nghệ,</a></li>
-										<li><a href="#">Văn hóa,</a></li>
-										<li><a href="#">Lối sống</a></li>
-									</ul>
-									<div class="user-details row">
-										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Nhật Tiến</a> <span class="lnr lnr-user"></span></p>
-										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Feb, 2020</a> <span class="lnr lnr-calendar-full"></span></p>
-										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>						
-									</div>
-								</div>
-								<div class="col-lg-9 col-md-9 ">
-									<div class="feature-img">
-										<img class="img-fluid" src="img/blog/lao.jpg" alt="">
-									</div>
-									<a class="posts-title" href="blog-single.html"><h3>07 ngày ở Lào</h3></a>
-									<p class="excert">
-										Sabaidee – là câu chào bằng tiếng Lào mà bạn sẽ dễ dàng gặp khi lang thang xứ này. Nó như là người Việt mình gặp khách đều chào mời “Xin chào” vậy đó. Thế là mình cũng đã đặt chân đến đất nước Triệu Voi này sau nhiều lần lỡ hẹn...									</p>
-									<a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
-								</div>
-							</div>
-							<div class="single-post row">
-								<div class="col-lg-3  col-md-3 meta-details">
-									<ul class="tags">
-										<li><a href="#">Ẩm thực,</a></li>
-										<li><a href="#">Công nghệ,</a></li>
-										<li><a href="#">Văn hóa,</a></li>
-										<li><a href="#">Lối sống</a></li>
-									</ul>
-									<div class="user-details row">
-										<p class="user-name col-lg-12 col-md-12 col-6"><a href="#">Nhật Tiến</a> <span class="lnr lnr-user"></span></p>
-										<p class="date col-lg-12 col-md-12 col-6"><a href="#">12 Feb, 2020</a> <span class="lnr lnr-calendar-full"></span></p>
-										<p class="view col-lg-12 col-md-12 col-6"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-										<p class="comments col-lg-12 col-md-12 col-6"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>						
-									</div>
-								</div>
-								<div class="col-lg-9 col-md-9 ">
-									<div class="feature-img">
-										<img class="img-fluid" src="img/blog/nga.jpg" alt="">
-									</div>
-									<a class="posts-title" href="blog-single.html"><h3>Săn Gấu Tại Nước Nga - Chốt Chặn Cuối Cùng Của Thế Giới</h3></a>
-									<p class="excert">
-										Trong những ngày nắng nóng đến oi bức này, không đâu bằng một quốc gia mát mẻ. Và những kẻ mạnh, hãy đến với Nga và thưởng thức niềm vui sướng khi đi săn gấu!<br />Chiến nào tụi gấu mập! 
-									</p>
-									<a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
-								</div>
-							</div>													
-		                    <nav class="blog-pagination justify-content-center d-flex">
-		                        <ul class="pagination">
-		                            <li class="page-item">
-		                                <a href="#" class="page-link" aria-label="Previous">
-		                                    <span aria-hidden="true">
-		                                        <span class="lnr lnr-chevron-left"></span>
-		                                    </span>
-		                                </a>
-		                            </li>
-		                            <li class="page-item"><a href="#" class="page-link">01</a></li>
-		                            <li class="page-item active"><a href="#" class="page-link">02</a></li>
-		                            <li class="page-item"><a href="#" class="page-link">03</a></li>
-		                            <li class="page-item"><a href="#" class="page-link">04</a></li>
-		                            <li class="page-item"><a href="#" class="page-link">09</a></li>
-		                            <li class="page-item">
-		                                <a href="#" class="page-link" aria-label="Next">
-		                                    <span aria-hidden="true">
-		                                        <span class="lnr lnr-chevron-right"></span>
-		                                    </span>
-		                                </a>
-		                            </li>
-		                        </ul>
-		                    </nav>
-						</div>
-						<div class="col-lg-4 sidebar-widgets">
-							<div class="widget-wrap">
-								<div class="single-sidebar-widget search-widget">
-									<form class="search-form" action="#">
-			                            <input placeholder="Tìm Kiếm Bài Viết" name="search" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tìm Kiếm Bài Viết'" >
-			                            <button type="submit"><i class="fa fa-search"></i></button>
-			                        </form>
-								</div>
-								<div class="single-sidebar-widget user-info-widget">
-									<img src="img/blog/user-info.jpg" alt="">
-									<a href="#"><h4>Nhật Tiến</h4></a>
-									<p>
-										Junior blogger
-									</p>
-									<ul class="social-links">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-github"></i></a></li>
-										<li><a href="#"><i class="fa fa-behance"></i></a></li>
-									</ul>
-									<p>
-										Không làm việc mà muốn ăn thì chỉ có ăn đầu buồi, ăn cứt!
-									</p>
-								</div>
-								<div class="single-sidebar-widget popular-post-widget">
-									<h4 class="popular-title">Bài Đăng Nổi Bật</h4>
-									<div class="popular-post-list">
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/sapa-right.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>SaPa - Thiên Đường Ảo Mộng</h6></a>
-												<p>02 giờ trước</p>
-											</div>
-										</div>
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/qn-right.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>Ăn Đêm Ở Qui Nhơn</h6></a>
-												<p>02 giờ trước</p>
-											</div>
-										</div>
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/paris-right.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>Món Bò Thượng Hạng Tại Paris Có Gì Đặc Biệt?</h6></a>
-												<p>02 giờ trước</p>
-											</div>
-										</div>
-										<div class="single-post-list d-flex flex-row align-items-center">
-											<div class="thumb">
-												<img class="img-fluid" src="img/blog/brecon-right.jpg" alt="">
-											</div>
-											<div class="details">
-												<a href="blog-single.html"><h6>Ngắm Sao Bầu Trời Brecon Beacons, Wales</h6></a>
-												<p>02 giờ trước</p>
-											</div>
-										</div>															
-									</div>
-								</div>
-								
-								<div class="single-sidebar-widget post-category-widget">
-									<h4 class="category-title">Danh Mục</h4>
-									<ul class="cat-list">
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Công nghệ</p>
-												<p>37</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Đời sống</p>
-												<p>24</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Thời trang</p>
-												<p>59</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Nghệ thuật</p>
-												<p>29</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Food</p>
-												<p>15</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Kiến Trúc</p>
-												<p>09</p>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="d-flex justify-content-between">
-												<p>Phiêu lưu</p>
-												<p>44</p>
-											</a>
-										</li>															
-									</ul>
-								</div>	
-								
-								<div class="single-sidebar-widget tag-cloud-widget">
-									<h4 class="tagcloud-title">Tags</h4>
-									<ul>
-										<li><a href="#">Công nghệ</a></li>
-										<li><a href="#">Thời trang</a></li>
-										<li><a href="#">Kiến trúc</a></li>
-										<li><a href="#">Thời trang</a></li>
-										<li><a href="#">Ẩm thực</a></li>
-										<li><a href="#">Công nghệ</a></li>
-										<li><a href="#">Đời sống</a></li>
-										<li><a href="#">Nghệ thuật</a></li>
-										<li><a href="#">Phiêu lưu</a></li>
-										<li><a href="#">Ẩm thực</a></li>
-										<li><a href="#">Đời sống</a></li>
-										<li><a href="#">Phiêu lưu</a></li>
-									</ul>
-								</div>								
-							</div>
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End post-content Area -->
-			
+              <div class="remember-sign-in">
+                <label class="switch" for="checkbox-remember-sign-in">
+                  <input type="checkbox" id="checkbox-remember-sign-in" />
+                  <div class="slider round"></div>
+                </label>
+                <span class="hoh">Remember me</span>
+              </div>
+              <div class="container-btn-submit-sign-in">
+                <button type="submit" id="dang-nhap" class="submit-sign-in-btn">
+                  Đăng nhập
+                </button>
+              </div>
+            </form>
+            <div class="dont-have-account">
+              <p>Bạn chưa có tài khoản?</p>
+              <button
+                type="button"
+                id="register-from-signin-form"
+                class="create-new-acc"
+              >
+                Tạo mới
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-content modal-signup-form">
+          <div class="modal-header">
+            <h4 class="modal-title signin-form-title">Đăng Ký</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="sign-in-content">
+            <div class="signup-benefits">
+              <p>
+                <i
+                  class="fa fa-check signup-benefits-tick"
+                  aria-hidden="true"
+                ></i>
+                Đặt nhanh hơn
+              </p>
+              <p>
+                <i
+                  class="fa fa-check signup-benefits-tick"
+                  aria-hidden="true"
+                ></i>
+                Nhận thêm nhiều khuyến mãi hấp dẫn
+              </p>
+              <p>
+                <i
+                  class="fa fa-check signup-benefits-tick"
+                  aria-hidden="true"
+                ></i>
+                Dễ dàng biết thêm thông tin về chuyến đi của bạn
+              </p>
+            </div>
+            <form action="#">
+              <div class="mail-input-form name-input-signup">
+                <input
+                  type="text"
+                  name="name-signup"
+                  placeholder="Họ Tên"
+                  required
+                  class="type-sign-in-email"
+                />
+                <label for="sign-in-email-lbl" class="sign-in-name-lbl"></label>
+                <div class="know-validate-signin-email"></div>
+              </div>
+              <div class="mail-input-form">
+                <input
+                  type="email"
+                  name="email-signin"
+                  placeholder="Email"
+                  required
+                  class="type-sign-in-email"
+                />
+                <label
+                  for="sign-in-email-lbl"
+                  class="sign-in-email-lbl"
+                ></label>
+                <div class="know-validate-signin-email"></div>
+              </div>
+
+              <div class="pass-input-form pass-input-signup">
+                <input
+                  type="password"
+                  name="password-signin"
+                  placeholder="Mật Khẩu"
+                  class="type-sign-in-pass"
+                  required
+                />
+                <label for="sign-in-pass-lbl" class="sign-in-pass-lbl"></label>
+                <div class="know-validate-signin-pass"></div>
+                <div class="notice-pass align-self-center">
+                  <p>
+                    ( Mật khẩu từ 6-30 ký tự, phân biệt chữ hoa thường, không
+                    chứa dấu cách)
+                  </p>
+                </div>
+              </div>
+
+              <div class="container-btn-submit-sign-in">
+                <button type="submit" id="dang-ky" class="submit-sign-in-btn">
+                  Đăng ký
+                </button>
+              </div>
+            </form>
+            <div class="dont-have-account">
+              <p>Bạn đã có tài khoản?</p>
+              <button
+                type="button"
+                class="create-new-acc"
+                id="login-from-signup-form"
+              >
+                Đăng nhập
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #header -->
+
+    <!-- start banner Area -->
+    <section class="banner-area relative blog-home-banner" id="home">
+      <div class="overlay overlay-bg"></div>
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="about-content blog-header-content col-lg-12">
+            <h1 class="text-white">Maldives ngay tại Việt Nam?</h1>
+            <p class="text-white">
+              Đây là thời điểm thích hợp cho những chuyến đi xa, tránh những
+              ngày nắng đến oi bức. Cùng đến với Kỳ Co - Maldives Việt Nam!
+            </p>
+            <a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End banner Area -->
+
+    <!-- Start top-category-widget Area -->
+    <section class="top-category-widget-area pt-90 pb-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="single-cat-widget">
+              <div class="content relative">
+                <div class="overlay overlay-bg"></div>
+                <a href="#" target="_blank">
+                  <div class="thumb">
+                    <img
+                      class="content-image img-fluid d-block mx-auto"
+                      src="img/blog/cat-widget1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="content-details">
+                    <h4 class="content-title mx-auto text-uppercase">
+                      Đời sống xã hội
+                    </h4>
+                    <span></span>
+                    <p>Tận hưởng cuộc sống cùng nhau</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-cat-widget">
+              <div class="content relative">
+                <div class="overlay overlay-bg"></div>
+                <a href="#" target="_blank">
+                  <div class="thumb">
+                    <img
+                      class="content-image img-fluid d-block mx-auto"
+                      src="img/blog/blog-culture.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="content-details">
+                    <h4 class="content-title mx-auto text-uppercase">
+                      văn hóa
+                    </h4>
+                    <span></span>
+                    <p>Đắm chìm vào nét đẹp văn hóa</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-cat-widget">
+              <div class="content relative">
+                <div class="overlay overlay-bg"></div>
+                <a href="#" target="_blank">
+                  <div class="thumb">
+                    <img
+                      class="content-image img-fluid d-block mx-auto"
+                      src="img/blog/cat-widget3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="content-details">
+                    <h4 class="content-title mx-auto text-uppercase">
+                      ẩm thực
+                    </h4>
+                    <span></span>
+                    <p>Yêu phải nói, đói phải ăn</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End top-category-widget Area -->
+
+    <!-- Start post-content Area -->
+    <section class="post-content-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 posts-list">
+            <div class="single-post row">
+              <div class="col-lg-3 col-md-3 meta-details">
+                <ul class="tags">
+                  <li><a href="#">Ẩm thực,</a></li>
+                  <li><a href="#">Công nghệ,</a></li>
+                  <li><a href="#">Văn hóa,</a></li>
+                  <li><a href="#">Lối sống</a></li>
+                </ul>
+                <div class="user-details row">
+                  <p class="user-name col-lg-12 col-md-12 col-6">
+                    <a href="#">Nhật Tiến</a> <span class="lnr lnr-user"></span>
+                  </p>
+                  <p class="date col-lg-12 col-md-12 col-6">
+                    <a href="#">12 Feb, 2020</a>
+                    <span class="lnr lnr-calendar-full"></span>
+                  </p>
+                  <p class="view col-lg-12 col-md-12 col-6">
+                    <a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span>
+                  </p>
+                  <p class="comments col-lg-12 col-md-12 col-6">
+                    <a href="#">06 Comments</a>
+                    <span class="lnr lnr-bubble"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-9">
+                <div class="feature-img">
+                  <img class="img-fluid" src="img/blog/wuhan.jpg" alt="" />
+                </div>
+                <a class="posts-title" href="blog-single.html"
+                  ><h3>Du Lịch Wuhan - Xu Hướng Xuân Hè 2020</h3></a
+                >
+                <p class="excert">
+                  Trong khoảng thời gian xuân hè 2020, dân yêu du lịch dường như
+                  có xu hướng mới là tham quan TP Wuhan - Trung Quốc. Có một lý
+                  tưởng mới cho rằng, người đi Wuhan về nước có nhiều cơ hội trở
+                  thành một famous people.<br />
+                  Họ bán hàng online sao?
+                </p>
+                <a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
+              </div>
+            </div>
+            <div class="single-post row">
+              <div class="col-lg-3 col-md-3 meta-details">
+                <ul class="tags">
+                  <li><a href="#">Ẩm thực,</a></li>
+                  <li><a href="#">Công nghệ,</a></li>
+                  <li><a href="#">Văn hóa,</a></li>
+                  <li><a href="#">Lối sống</a></li>
+                </ul>
+                <div class="user-details row">
+                  <p class="user-name col-lg-12 col-md-12 col-6">
+                    <a href="#">Nhật Tiến</a> <span class="lnr lnr-user"></span>
+                  </p>
+                  <p class="date col-lg-12 col-md-12 col-6">
+                    <a href="#">12 Feb, 2020</a>
+                    <span class="lnr lnr-calendar-full"></span>
+                  </p>
+                  <p class="view col-lg-12 col-md-12 col-6">
+                    <a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span>
+                  </p>
+                  <p class="comments col-lg-12 col-md-12 col-6">
+                    <a href="#">06 Comments</a>
+                    <span class="lnr lnr-bubble"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-9">
+                <div class="feature-img">
+                  <img class="img-fluid" src="img/blog/daegu.jpg" alt="" />
+                </div>
+                <a class="posts-title" href="blog-single.html"
+                  ><h3>Du Lịch Daegu - Xu Hướng Xuân Hè 2020</h3></a
+                >
+                <p class="excert">
+                  Trong khoảng thời gian xuân hè 2020, dân yêu du lịch dường như
+                  có xu hướng mới là tham quan TP Daegu - Hàn Quốc. Có một lý
+                  tưởng mới cho rằng, người đi Daegu về nước có nhiều cơ hội trở
+                  thành một famous people.<br />
+                  Họ bán hàng online sao?
+                </p>
+                <a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
+              </div>
+            </div>
+            <div class="single-post row">
+              <div class="col-lg-3 col-md-3 meta-details">
+                <ul class="tags">
+                  <li><a href="#">Ẩm thực,</a></li>
+                  <li><a href="#">Công nghệ,</a></li>
+                  <li><a href="#">Văn hóa,</a></li>
+                  <li><a href="#">Lối sống</a></li>
+                </ul>
+                <div class="user-details row">
+                  <p class="user-name col-lg-12 col-md-12 col-6">
+                    <a href="#">Nhật Tiến</a> <span class="lnr lnr-user"></span>
+                  </p>
+                  <p class="date col-lg-12 col-md-12 col-6">
+                    <a href="#">12 Feb, 2020</a>
+                    <span class="lnr lnr-calendar-full"></span>
+                  </p>
+                  <p class="view col-lg-12 col-md-12 col-6">
+                    <a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span>
+                  </p>
+                  <p class="comments col-lg-12 col-md-12 col-6">
+                    <a href="#">06 Comments</a>
+                    <span class="lnr lnr-bubble"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-9">
+                <div class="feature-img">
+                  <img class="img-fluid" src="img/blog/fukushima.jpg" alt="" />
+                </div>
+                <a class="posts-title" href="blog-single.html"
+                  ><h3>Một ngày ở Aizu - Fukushima</h3></a
+                >
+                <p class="excert">
+                  Tôi bất ngờ đến lặng người vì cảnh quan nơi này... Hoa anh đào
+                  sao có thể đẹp một cách mềm mại đến thế? Hòa lẫn với tiết trời
+                  mát mẻ là màu trời xanh ngắt, màu hoa hồng nhạt. Bạn có tưởng
+                  tượng ra được không?...
+                </p>
+                <a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
+              </div>
+            </div>
+            <div class="single-post row">
+              <div class="col-lg-3 col-md-3 meta-details">
+                <ul class="tags">
+                  <li><a href="#">Ẩm thực,</a></li>
+                  <li><a href="#">Công nghệ,</a></li>
+                  <li><a href="#">Văn hóa,</a></li>
+                  <li><a href="#">Lối sống</a></li>
+                </ul>
+                <div class="user-details row">
+                  <p class="user-name col-lg-12 col-md-12 col-6">
+                    <a href="#">Nhật Tiến</a> <span class="lnr lnr-user"></span>
+                  </p>
+                  <p class="date col-lg-12 col-md-12 col-6">
+                    <a href="#">12 Feb, 2020</a>
+                    <span class="lnr lnr-calendar-full"></span>
+                  </p>
+                  <p class="view col-lg-12 col-md-12 col-6">
+                    <a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span>
+                  </p>
+                  <p class="comments col-lg-12 col-md-12 col-6">
+                    <a href="#">06 Comments</a>
+                    <span class="lnr lnr-bubble"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-9">
+                <div class="feature-img">
+                  <img class="img-fluid" src="img/blog/lao.jpg" alt="" />
+                </div>
+                <a class="posts-title" href="blog-single.html"
+                  ><h3>07 ngày ở Lào</h3></a
+                >
+                <p class="excert">
+                  Sabaidee – là câu chào bằng tiếng Lào mà bạn sẽ dễ dàng gặp
+                  khi lang thang xứ này. Nó như là người Việt mình gặp khách đều
+                  chào mời “Xin chào” vậy đó. Thế là mình cũng đã đặt chân đến
+                  đất nước Triệu Voi này sau nhiều lần lỡ hẹn...
+                </p>
+                <a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
+              </div>
+            </div>
+            <div class="single-post row">
+              <div class="col-lg-3 col-md-3 meta-details">
+                <ul class="tags">
+                  <li><a href="#">Ẩm thực,</a></li>
+                  <li><a href="#">Công nghệ,</a></li>
+                  <li><a href="#">Văn hóa,</a></li>
+                  <li><a href="#">Lối sống</a></li>
+                </ul>
+                <div class="user-details row">
+                  <p class="user-name col-lg-12 col-md-12 col-6">
+                    <a href="#">Nhật Tiến</a> <span class="lnr lnr-user"></span>
+                  </p>
+                  <p class="date col-lg-12 col-md-12 col-6">
+                    <a href="#">12 Feb, 2020</a>
+                    <span class="lnr lnr-calendar-full"></span>
+                  </p>
+                  <p class="view col-lg-12 col-md-12 col-6">
+                    <a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span>
+                  </p>
+                  <p class="comments col-lg-12 col-md-12 col-6">
+                    <a href="#">06 Comments</a>
+                    <span class="lnr lnr-bubble"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-9">
+                <div class="feature-img">
+                  <img class="img-fluid" src="img/blog/nga.jpg" alt="" />
+                </div>
+                <a class="posts-title" href="blog-single.html"
+                  ><h3>
+                    Săn Gấu Tại Nước Nga - Chốt Chặn Cuối Cùng Của Thế Giới
+                  </h3></a
+                >
+                <p class="excert">
+                  Trong những ngày nắng nóng đến oi bức này, không đâu bằng một
+                  quốc gia mát mẻ. Và những kẻ mạnh, hãy đến với Nga và thưởng
+                  thức niềm vui sướng khi đi săn gấu!<br />Chiến nào tụi gấu
+                  mập!
+                </p>
+                <a href="blog-single.html" class="primary-btn">Đọc Thêm</a>
+              </div>
+            </div>
+            <nav class="blog-pagination justify-content-center d-flex">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a href="#" class="page-link" aria-label="Previous">
+                    <span aria-hidden="true">
+                      <span class="lnr lnr-chevron-left"></span>
+                    </span>
+                  </a>
+                </li>
+                <li class="page-item"><a href="#" class="page-link">01</a></li>
+                <li class="page-item active">
+                  <a href="#" class="page-link">02</a>
+                </li>
+                <li class="page-item"><a href="#" class="page-link">03</a></li>
+                <li class="page-item"><a href="#" class="page-link">04</a></li>
+                <li class="page-item"><a href="#" class="page-link">09</a></li>
+                <li class="page-item">
+                  <a href="#" class="page-link" aria-label="Next">
+                    <span aria-hidden="true">
+                      <span class="lnr lnr-chevron-right"></span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-4 sidebar-widgets">
+            <div class="widget-wrap">
+              <div class="single-sidebar-widget search-widget">
+                <form class="search-form" action="#">
+                  <input
+                    placeholder="Tìm Kiếm Bài Viết"
+                    name="search"
+                    type="text"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Tìm Kiếm Bài Viết'"
+                  />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+              <div class="single-sidebar-widget user-info-widget">
+                <img src="img/blog/user-info.jpg" alt="" />
+                <a href="#"><h4>Nhật Tiến</h4></a>
+                <p>Junior blogger</p>
+                <ul class="social-links">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                  </li>
+                </ul>
+                <p>Không làm việc mà muốn ăn thì chỉ có ăn đầu buồi, ăn cứt!</p>
+              </div>
+              <div class="single-sidebar-widget popular-post-widget">
+                <h4 class="popular-title">Bài Đăng Nổi Bật</h4>
+                <div class="popular-post-list">
+                  <div
+                    class="single-post-list d-flex flex-row align-items-center"
+                  >
+                    <div class="thumb">
+                      <img
+                        class="img-fluid"
+                        src="img/blog/sapa-right.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <a href="blog-single.html"
+                        ><h6>SaPa - Thiên Đường Ảo Mộng</h6></a
+                      >
+                      <p>02 giờ trước</p>
+                    </div>
+                  </div>
+                  <div
+                    class="single-post-list d-flex flex-row align-items-center"
+                  >
+                    <div class="thumb">
+                      <img
+                        class="img-fluid"
+                        src="img/blog/qn-right.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <a href="blog-single.html"><h6>Ăn Đêm Ở Qui Nhơn</h6></a>
+                      <p>02 giờ trước</p>
+                    </div>
+                  </div>
+                  <div
+                    class="single-post-list d-flex flex-row align-items-center"
+                  >
+                    <div class="thumb">
+                      <img
+                        class="img-fluid"
+                        src="img/blog/paris-right.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <a href="blog-single.html"
+                        ><h6>
+                          Món Bò Thượng Hạng Tại Paris Có Gì Đặc Biệt?
+                        </h6></a
+                      >
+                      <p>02 giờ trước</p>
+                    </div>
+                  </div>
+                  <div
+                    class="single-post-list d-flex flex-row align-items-center"
+                  >
+                    <div class="thumb">
+                      <img
+                        class="img-fluid"
+                        src="img/blog/brecon-right.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="details">
+                      <a href="blog-single.html"
+                        ><h6>Ngắm Sao Bầu Trời Brecon Beacons, Wales</h6></a
+                      >
+                      <p>02 giờ trước</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="single-sidebar-widget post-category-widget">
+                <h4 class="category-title">Danh Mục</h4>
+                <ul class="cat-list">
+                  <li>
+                    <a href="#" class="d-flex justify-content-between">
+                      <p>Công nghệ</p>
+                      <p>37</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex justify-content-between">
+                      <p>Đời sống</p>
+                      <p>24</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex justify-content-between">
+                      <p>Thời trang</p>
+                      <p>59</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex justify-content-between">
+                      <p>Nghệ thuật</p>
+                      <p>29</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex justify-content-between">
+                      <p>Food</p>
+                      <p>15</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex justify-content-between">
+                      <p>Kiến Trúc</p>
+                      <p>09</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex justify-content-between">
+                      <p>Phiêu lưu</p>
+                      <p>44</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="single-sidebar-widget tag-cloud-widget">
+                <h4 class="tagcloud-title">Tags</h4>
+                <ul>
+                  <li><a href="#">Công nghệ</a></li>
+                  <li><a href="#">Thời trang</a></li>
+                  <li><a href="#">Kiến trúc</a></li>
+                  <li><a href="#">Thời trang</a></li>
+                  <li><a href="#">Ẩm thực</a></li>
+                  <li><a href="#">Công nghệ</a></li>
+                  <li><a href="#">Đời sống</a></li>
+                  <li><a href="#">Nghệ thuật</a></li>
+                  <li><a href="#">Phiêu lưu</a></li>
+                  <li><a href="#">Ẩm thực</a></li>
+                  <li><a href="#">Đời sống</a></li>
+                  <li><a href="#">Phiêu lưu</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End post-content Area -->
+
     <!-- start footer Area -->
     <footer class="footer-area section-gap">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-3  col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h6>Về Chúng Em</h6>
-                        <p>
-                            Nhịp độ thế giới đã trở nên nhanh tới mức con người họ không chỉ muốn dừng lại để chỉ đọc một trang thông tin. Vì thế chúng em sẽ thực hiện đề tài với một thông điệp rõ ràng.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h6>Liên Kết Nhanh</h6>
-                        <div class="row">
-                            <div class="col">
-                                <ul>
-                                    <li><a href="#">Đặt Tour</a></li>
-                                    <li><a href="#">Trang Chủ</a></li>
-                                    <li><a href="#">Khách Sạn</a></li>
-                                    <li><a href="#">Vé Máy Bay</a></li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul>
-                                    <li><a href="#">Thành Viên</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Liên Hệ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3  col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h6>Đăng ký nhận tin mới</h6>
-                        <p>
-                            For business professionals caught between high OEM price and mediocre print and graphic output.
-                        </p>
-                        <div id="mc_embed_signup">
-                            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
-                                <div class="input-group d-flex flex-row">
-                                    <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                    <button class="btn bb-btn"><span class="lnr lnr-location"></span></button>
-                                </div>
-                                <div class="mt-10 info"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3  col-md-6 col-sm-6">
-                    <div class="single-footer-widget mail-chimp">
-                        <h6 class="mb-20">Bản Đồ</h6>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8576299631554!2d106.68530305072954!3d10.822205392252599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1582560540843!5m2!1svi!2s"
-                            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>Về Chúng Em</h6>
+              <p>
+                Nhịp độ thế giới đã trở nên nhanh tới mức con người họ không chỉ
+                muốn dừng lại để chỉ đọc một trang thông tin. Vì thế chúng em sẽ
+                thực hiện đề tài với một thông điệp rõ ràng.
+              </p>
             </div>
-
-            <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                <p class="col-lg-12 col-sm-12 footer-text m-0">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-
-                    <script>
-                        var date = new Date();
-                        document.write(date.toDateString());
-                    </script> <a href="#">Đồ Án Tốt Nghiệp</a> <i class="fa fa-wpforms" aria-hidden="true"></i> <br /> <a href="https://www.facebook.com/hackerakidosu.98" target="_blank">Trương Nhật Tiến</a> - <a href="https://www.facebook.com/ToTai55"
-                        target="_blank">Võ Tô Tài</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
-
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>Liên Kết Nhanh</h6>
+              <div class="row">
+                <div class="col">
+                  <ul>
+                    <li><a href="#">Đặt Tour</a></li>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Khách Sạn</a></li>
+                    <li><a href="#">Vé Máy Bay</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li><a href="#">Thành Viên</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>Đăng ký nhận tin mới</h6>
+              <p>
+                For business professionals caught between high OEM price and
+                mediocre print and graphic output.
+              </p>
+              <div id="mc_embed_signup">
+                <form
+                  target="_blank"
+                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                  method="get"
+                  class="subscription relative"
+                >
+                  <div class="input-group d-flex flex-row">
+                    <input
+                      name="EMAIL"
+                      placeholder="Email Address"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Email Address '"
+                      required=""
+                      type="email"
+                    />
+                    <button class="btn bb-btn">
+                      <span class="lnr lnr-location"></span>
+                    </button>
+                  </div>
+                  <div class="mt-10 info"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget mail-chimp">
+              <h6 class="mb-20">Bản Đồ</h6>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8576299631554!2d106.68530305072954!3d10.822205392252599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1582560540843!5m2!1svi!2s"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+          </div>
         </div>
-    </footer>
-    <!-- End footer Area -->	
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>		
- 			<script src="js/jquery-ui.js"></script>					
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>						
-			<script src="js/jquery.nice-select.min.js"></script>					
-			<script src="js/owl.carousel.min.js"></script>							
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
-		</body>
-	</html>
+        <div
+          class="row footer-bottom d-flex justify-content-between align-items-center"
+        >
+          <p class="col-lg-12 col-sm-12 footer-text m-0">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+            <script>
+              var date = new Date();
+              document.write(date.toDateString());
+            </script>
+
+            <i class="fa fa-wpforms" aria-hidden="true"></i> <br />
+            <a href="https://www.facebook.com/hackerakidosu.98" target="_blank"
+              >Trương Nhật Tiến</a
+            >
+
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer Area -->
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
